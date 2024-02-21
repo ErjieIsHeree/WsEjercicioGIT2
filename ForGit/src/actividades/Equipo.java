@@ -19,7 +19,7 @@ public class Equipo {
 
 	@Override
 	public String toString() {
-		return "Videojuego [nombre=" + nombre + ", jugador=" 
+		return "equipo: [nombre=" + nombre + ", jugador=" 
 	+ Arrays.toString(jugadores) + "]";
 	}
 	
