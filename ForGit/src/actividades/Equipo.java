@@ -48,4 +48,35 @@ public class Equipo {
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	//lo dos ultimos 
+	public boolean listasIguales (Equipo segundoEquipo) {
+		if (this.jugadores.length != segundoEquipo.jugadores.length) {
+			return false;
+		}
+		
+		for(String otroJugador : segundoEquipo.jugadores) {
+			if(existeJugador(otroJugador)) {
+				continue;
+			}else {
+				return false;
+			}
+		}
+		
+		return true;
+	}
+	
+	public boolean equiposIguales (Equipo segundoEquipo) {
+		if (this.nombre.equalsIgnoreCase(segundoEquipo.nombre)
+				&& listasIguales(segundoEquipo)) {
+			return true;
+		}
+		return false;
+	}
+	
 }
