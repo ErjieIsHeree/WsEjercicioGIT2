@@ -45,16 +45,7 @@ public class Equipo {
     public boolean esAptoParaJugar() {
         return jugadores.length >= 7;
     }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	//lo dos ultimos 
+    
 	public boolean listasIguales (Equipo segundoEquipo) {
 		if (this.jugadores.length != segundoEquipo.jugadores.length) {
 			return false;
