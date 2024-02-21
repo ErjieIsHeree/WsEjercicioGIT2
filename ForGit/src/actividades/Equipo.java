@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Equipo {
 
 	public String nombre;
-	public String[] jugador;
+	public String[] jugadores;
 	
 	public Equipo() {
 		super();
@@ -14,29 +14,37 @@ public class Equipo {
 	public Equipo(String nombre, String[] jugador) {
 		super();
 		this.nombre = nombre;
-		this.jugador = jugador;
+		this.jugadores = jugador;
 	}
 
 	@Override
 	public String toString() {
 		return "Videojuego [nombre=" + nombre + ", jugador=" 
-	+ Arrays.toString(jugador) + "]";
+	+ Arrays.toString(jugadores) + "]";
 	}
 	
 	public void mostrarJugadores() {
-		for (String s : jugador) {
+		for (String s : jugadores) {
 			System.out.println(s);
 		}
 	}
 	
 	public boolean existeJugador(String jugador) {
-		for (String s : this.jugador) {
+		for (String s : this.jugadores) {
 			if (s.equalsIgnoreCase(jugador)) {
 				return true;
 			}
 		}
 		return false;
 	}
+	public int getNumeroJugadores() {
+        return jugadores.length;
+    }
+
+    
+    public boolean esAptoParaJugar() {
+        return jugadores.length >= 7;
+    }
 	
 	
 	
