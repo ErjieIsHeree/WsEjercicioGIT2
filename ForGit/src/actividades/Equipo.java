@@ -2,16 +2,16 @@ package actividades;
 
 import java.util.Arrays;
 
-public class Videojuego {
+public class Equipo {
 
 	public String nombre;
 	public String[] jugador;
 	
-	public Videojuego() {
+	public Equipo() {
 		super();
 	}
 
-	public Videojuego(String nombre, String[] jugador) {
+	public Equipo(String nombre, String[] jugador) {
 		super();
 		this.nombre = nombre;
 		this.jugador = jugador;
